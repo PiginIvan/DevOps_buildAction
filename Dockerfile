@@ -1,5 +1,5 @@
 FROM openjdk:18
-WORKDIR /app
-COPY ./target/*.jar /app.jar
+WORKDIR .
+COPY /target/*.jar DevOps-1.0-SNAPSHOT.jar
 EXPOSE 8080
-CMD ["java", "-jar"]
+CMD ["java", "-jar", "DevOps-1.0-SNAPSHOT.jar"]
