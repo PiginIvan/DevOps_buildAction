@@ -37,4 +37,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: DOCKER_USERNAME/${{ env.IMAGE_NAME }}:pr-${{ github.event.number }}
+          tags: ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:pr-${{ github.event.number }}
